@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Jerryl-597/Suunyside-landing-page)
-- Live Site URL: (https://sunnysidelandinghome.netlify.app/)
+- Solution URL: (https://github.com/Jerryl-597/Huddle-Landing-Page)
+- Live Site URL: (https://huddlelandingdesign.netlify.app)
 
 ## My process
 
