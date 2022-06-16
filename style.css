@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 ::before,
 ::after,
 * {
@@ -14,7 +18,8 @@
   --clr-secondary-4: hsl(322, 77%, 79%);
   --ff-white: #fff;
   --f-size: 18px;
-  --ff-primary: "poppins";
+  --ff-primary: "Poppins", sans-serif;
+  --ff-primary-1: "Open Sans", sans-serif;
   --transition: all 0.2s linear;
 }
 body {
@@ -54,6 +59,7 @@ body {
   border-radius: 1.5rem;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: var(--ff-primary);
 }
 .nav-mode:hover {
   color: var(--clr-secondary-3);
@@ -69,12 +75,13 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
+
 .hero-width {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  width: 19rem;
+  max-width: 23rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -83,11 +90,14 @@ body {
   font-size: 1.3rem;
   text-transform: capitalize;
   line-height: 1.2;
+  font-family: var(--ff-primary);
 }
 .para-one {
   color: var(--clr-secondary-2);
   line-height: 1.2;
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-family: var(--ff-primary-1);
+  font-weight: 400;
 }
 .hero-button {
   color: var(--ff-white);
@@ -102,6 +112,9 @@ body {
   cursor: pointer;
   transition: var(--transition);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 0.75rem;
 }
 .hero-button:hover {
   background: var(--clr-secondary-4);
@@ -112,7 +125,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  margin-top: -1rem;
 }
 .image-one {
   height: 100%;
@@ -150,7 +162,6 @@ body {
     justify-content: space-around;
     min-height: 70vh;
   }
-
   .hero-image {
     height: 30rem;
   }
@@ -196,14 +207,18 @@ body {
   margin-bottom: 1rem;
   color: var(--clr-secondary-2);
   text-transform: capitalize;
+  font-family: var(--ff-primary);
 }
 .para-two {
   color: var(--clr-secondary-3);
   text-align: center;
+  font-family: var(--ff-primary-1);
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 @media screen and (max-width: 375px) {
   .sec-card {
-    width: 90%;
+    width: 85%;
   }
   .sec-image {
     width: 100%;
@@ -220,10 +235,15 @@ body {
   .hero-image {
     width: 16rem;
   }
+  .hero-two {
+    margin-bottom: 1.5rem;
+  }
 }
 @media screen and (max-width: 320px) {
   .sec-card {
-    width: 100%;
+    width: 90%;
+    padding: 1rem;
+    height: 35rem;
   }
   .hero-width {
     width: 17rem;
@@ -262,15 +282,22 @@ body {
 /* footer page */
 .footer {
   background: var(--clr-secondary-2);
-  min-height: 90vh;
-  padding: 1rem 1.5rem;
+  /* min-height: 90vh; */
+  padding: 3rem 2rem;
   padding-top: 9rem;
   position: relative;
   /* display: flex; */
 }
+.footer p {
+  color: var(--clr-secondary-3);
+  font-family: var(--ff-primary-1);
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
 .footer-info {
   background: var(--ff-white);
-  width: 20rem;
+  width: 70%;
   height: 10rem;
   margin-left: auto;
   margin-right: auto;
@@ -287,13 +314,22 @@ body {
   left: 50%;
   top: 0%;
   transform: translate(-50%, -50%);
+  font-family: var(--ff-primary);
 }
 .image-three {
   color: white;
   background: white;
   height: 1.5rem;
 }
-.footer {
+.footer-info h4 {
+  text-align: center;
+}
+.foot-but {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-div {
   display: grid;
   row-gap: 1rem;
 }
@@ -308,21 +344,75 @@ body {
 .foot-image {
   color: white;
 }
+.foot {
+  margin-bottom: 0.75rem;
+}
 .foot-icons {
   height: 1rem;
 }
 .foot-text {
   line-height: 1.2;
-  color: var(--clr-secondary-3);
   padding: 0;
 }
 .foot-text-one {
-  color: var(--clr-secondary-3);
-  text-transform: capitalize;
   margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+.foot-small {
+  margin-top: -2rem;
+}
+
+.social-icons {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social {
+  display: flex;
+  column-gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.social-border {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  height: 50%;
+  width: 100%;
 }
 .copyright {
   text-transform: capitalize;
-  color: var(--clr-secondary-3);
+  text-align: center;
+  font-size: 12px;
 }
-/* End f footer page */
+.copy {
+  text-transform: lowercase;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 3rem 4rem;
+  }
+  .footer-div {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: left;
+    align-items: center;
+    padding-top: 7rem;
+  }
+  .copyright {
+    text-align: right;
+  }
+  .foot-div {
+    max-width: 60rem;
+  }
+  .footer-info {
+    width: 20rem;
+  }
+}
+/* End of footer page */
